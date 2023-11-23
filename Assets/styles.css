@@ -1,0 +1,205 @@
+/* Page Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* click one of the links in the navigation the UI scrolls to the corresponding section */
+html {
+scroll-behavior: smooth;
+}
+
+/* Body Style */
+body {
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
+  background-color: whitesmoke;
+  min-height: 100vh; /* Body Height */
+}
+
+/* Header Style */
+header {
+  background-color: rgb(121, 120, 120);
+  width: 100%;
+  position: absolute;
+  padding: 0;   
+  z-index: 10;
+}
+
+/* Top Navigation and Links Style */
+.topic {
+  color: rgb(140, 250, 214);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  font-weight: bold;
+}
+
+.topic-front {
+  display: inline-block;
+  margin-right: 10px;
+  list-style: none;
+}
+
+#topic-front-front {
+  float: right;
+  margin-top: 36px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+/* Name Style */
+.name {
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(121, 120, 120);
+  background-color: rgb(140, 250, 214);
+  float: left;
+  padding-left: 50px;
+  padding-right: 10px;
+  margin-top: 4px;
+}
+
+/* Container Style */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-bottom: 15px;
+}
+
+/* Subtitle Style */
+#subtitle {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(121, 120, 120);
+  background-color: rgb(140, 250, 214);
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 30px;
+  margin-bottom: 11px;
+}
+
+/* Image Style */
+#coding-pic {
+  width: 100%;
+}
+
+/* Flexbox Layout */
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.flex-header {
+    font-size: 3rem;
+    color: rgb(65, 65, 126);
+    float: left;
+    width: 10%;
+    margin-left: 200px;
+    text-align: end;
+}
+
+.flex-content {
+  flex-basis: 75%;
+  border-left: 4px solid rgb(65,65,126);
+  padding-left: 50px; 
+}
+/*bottom nav style*/
+.footer-front {
+  display: inline-block;
+  margin: 60px;
+  list-style: none; 
+
+}
+
+.footer {
+  color: rgb(49, 4, 108);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;  
+  position: relative;
+  
+}
+
+
+
+/* Grid Container Style */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+  padding-left: 60px;
+  position: relative; 
+  top: initial; 
+  left: initial; 
+}
+
+/* Grid Item Style */
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border: 4px solid transparent; 
+  box-sizing: border-box;
+  border-color: aquamarine;
+}
+/* Grid Item Img Style */
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: brightness(50%);
+}
+/* Grid Item Hover Style */
+.grid-item:hover img {
+  filter: brightness(100%);
+}
+
+/* Description Style */
+.description {
+  position: absolute;
+  bottom: 0;
+  background-color: aquamarine;
+  color: rgba(0, 0, 0, 0.5);
+  width: auto;
+  padding: 10px;
+  padding-bottom: 0px;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+/* Grid Header Style */
+h3 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+/* Grid Paragraph Style */
+.grid-text {
+  margin-bottom: 10px;
+  font-size: 0.8em;
+}
+/* Grid Item Size */
+.big { grid-column: span 100; }
+
+.small { grid-column: span 50; }
+
+
+/* Adjustments for Mobile */
+ @media screen and (max-width: 600px) {
+  .flex-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .flex-header {
+      text-align: left;
+      margin-bottom: 10px;
+  }
+  .grid-container {
+    width: 100%;
+  }
+}
